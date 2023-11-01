@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="content">
+        <div class="topBar">
+            <i class="fa-solid fa-arrow-down-wide-short"></i>
+            &NonBreakingSpace;
+            <span>Now Playing</span>
+            &NonBreakingSpace;
+            <i class="fa-solid fa-music"></i>
+        </div>
+        <div class="imageWrapper">
+            <div class="imageMusic">
+                <img src="landingPage.jpeg" alt="" class="imageSong">
+            </div>
+        </div>
+        <div class="imageWrapper">
+            <div class="imageMusic">
+                <p id="songTitle">Song Title</p>
+                <p id="songArtist">Artist</p>
+            </div>
+        </div>
+        <div class="imageWrapper">
+            <div class="imageMusic">
+                <p id="timeTrack">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="controlButtons">
+            <p id="controls"><i class="fa-solid fa-repeat" id="repeat"></i><i class="fa-solid fa-backward"  id="lastTrack" onclick="upDatePreviousMusic()"></i><i class="fa-solid fa-play" id="play" ondblclick="pauseSong()"></i><i class="fa-solid fa-forward"  id="nextTack" onclick="upDateNextMusic()"></i><i class="fa-solid fa-shuffle" id="shuffle"></i></p>
+        </div>
+    </div>
+    <audio src="song1.mp3" class="song song1" id="1"></audio>
+    <audio src="song3.flac" class="song song2" id="2"></audio>
+    <audio src="FaithstanJiraniananimada.mp3" class="song song3" id="3"></audio>
+    <audio src="MoyoWanguPatrickKubuya.mp3" class="song song4" id="4"></audio>
+    <audio src="NicoVinzAmIWrong.mp3" class="song song5" id="5"></audio>
+    <audio src="Libianca.mp3" class="song song5" id="6"></audio>
+    <audio src="bwanaTegememeo.mp3" class="song song5" id="6"></audio>
+    <audio src="Yougotbeka.mp3" class="song song5" id="6"></audio>
+    <audio src="SurvivorWenyShay.mp3" class="song song5" id="6"></audio>
+    <audio src="06. Mopstick.mp3" class="song song5" id="6"></audio>
+    <audio src="MoodIanDior.mp3" class="song song5" id="6"></audio>
+
+    <script src="index.js"></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

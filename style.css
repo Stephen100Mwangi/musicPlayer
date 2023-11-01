@@ -1,0 +1,82 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+.content{
+    border-radius: 10px;
+    background-color: #7743DB90;
+    height: fit-content;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: .2px solid;
+}
+#controls{
+    display: flex;
+    width: 200px;
+    gap: 20px;
+}
+#songArtist{
+    font-weight: 400;
+}
+#songTitle{
+    font-weight: 900;
+    color: red;
+}
+#repeat,#lastTrack,#play,#nextTack,#shuffle{
+    cursor: pointer;
+}
+#timeTrack{
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    animation: animateProgress 3s ease-in-out infinite;
+}
+#timeTrack::before{
+    animation: animateProgress 3s ease-in-out infinite;
+    position: absolute;
+    /* content: '.::...:..::'; */
+    font-weight: 900;
+}
+@keyframes animateProgress {
+    0%{
+        transform: translateY(10px);
+        color: red;
+    }
+    20%{
+        transform: translateY(5px);
+        color: crimson;
+    }
+    40%{
+        transform: translateY(0px);
+        color: blue;
+    }
+    60%{
+        transform: translateY(10px);
+    }
+    80%{
+        transform: translateY(-5px);
+        color: green;
+    }
+    100%{
+        transform: translateY(5px);
+        color: yellow;
+    }
+}
